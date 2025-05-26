@@ -6,7 +6,7 @@ import axios from 'axios';
 const DATA_DIR = path.join(__dirname, '../../data/raw');
 const FILE_PATH2 = path.join(DATA_DIR, 'newsapi-batch.json');
 const OUT_PATH = path.join(DATA_DIR, 'hackernews-cleaned.json');
-const API_Key = '162b1ef131d74e98ad0f6ce974d94894';
+const API_Key = 'key';
 
 export interface Article {
     title: string;

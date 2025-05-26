@@ -12,7 +12,7 @@ tfidf_matrix = np.array(tfidf_data["tfidf_matrix"])
 print(f"Loaded TF-IDF matrix with shape: {tfidf_matrix.shape}")
 
 #run kmeans
-k = 6
+k = 8
 kmeans = KMeans(n_clusters=k, random_state=42, n_init=10)
 kmeans.fit(tfidf_matrix)
 

@@ -70,10 +70,24 @@ async function getQueryVector(query) {
             const cleanedFilePath = path_1.default.join(__dirname, "../../data/raw/test.json");
             const cleanedData = JSON.parse(fs_1.default.readFileSync(cleanedFilePath, 'utf-8'));
             console.log("\nTop search results");
-            rankedStories.forEach(({ index, score }, rank) => {
-                const { title, url } = cleanedData[index];
-                console.log(`${rank + 1}. [${title}](${url}) - Score: ${score.toFixed(4)}`);
-            });
+            // rankedStories.forEach(({ index, score }, rank) => {
+            //     const {title, url} = cleanedData[index];
+            //     if (rank < 10) {
+            //         console.log(`${rank + 1}. [${title}](${url}) - Score: ${score.toFixed(4)}`);
+            //     }
+            // });
+            let rank = 0;
+            for (const story of rankedStories) {
+                const { title, url } = cleanedData[story.index];
+                if (rank == 0 && story.score == 0.00000) {
+                    console.log('No available results');
+                    break;
+                }
+                if (story.score > 0.00000000) {
+                    console.log(`${rank + 1}. [${title}](${url}) - Score: ${story.score.toFixed(4)}`);
+                }
+                rank += 1;
+            }
         }
         catch (parseError) {
             console.error("Failed to parse vector:", parseError);

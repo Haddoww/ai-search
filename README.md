@@ -11,9 +11,6 @@ An intelligent agentic AI system that autonomously interprets development goals,
 
 This project implements a **plan-execute agentic architecture** that acts as an intelligent coding assistant. Unlike simple code completion tools, this agent understands high-level goals, autonomously plans multi-step solutions, and orchestrates various tools to refactor code, generate tests, handle errors, and create documentation.
 
-**Project Timeline:** January 2024 – April 2024  
-**Location:** Albany, GA
-
 ## ✨ Key Features
 
 ### 🎯 Autonomous Planning & Execution
@@ -228,34 +225,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👤 Author
-
-**Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- Email: your.email@example.com
-
-## 🙏 Acknowledgments
-
-- OpenAI for GPT-4 API
-- Streamlit team for the amazing framework
-- Google Cloud for Docs API
-- The open-source community
-
-## 📞 Support
-
-If you encounter any issues or have questions:
-- Open an [Issue](https://github.com/yourusername/context-aware-code-agent/issues)
-- Check the [Wiki](https://github.com/yourusername/context-aware-code-agent/wiki)
-- Review [Documentation](docs/)
-
----
-
-**⭐ If you find this project useful, please consider giving it a star!**
-
-*Built with ❤️ in Albany, GA*
